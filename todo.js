@@ -44,7 +44,7 @@
       task.completed ? "checked" : ""
     } class="custom-checkbox">
     <label for="${task.id}">${task.title}</label>
-    <img src="bin.svg" class="delete" data-id="${task.id}" />
+    <img src="images/bin.svg" class="delete" data-id="${task.id}" />
     `;
 
     taskList.append(li);
