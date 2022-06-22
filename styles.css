@@ -2,15 +2,23 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body{
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #container {
   width: 500px;
   margin: 0 auto;
+  color: black;
+  /* background-color: rgba(0, 0, 0, 0.363); */
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   /* border: 1px solid #e5e5e5; */
+  
 }
 ul li {
   padding: 10px;
@@ -19,9 +27,10 @@ ul li {
   justify-content: space-between;
   align-items: inherit;
   align-items: center;
+  
 }
 ul li:hover {
-  background: #f3f3f3;
+  background: #01010135;
 }
 #list input {
   padding: 0;
@@ -40,8 +49,8 @@ ul li:hover {
 #list label:before {
   content:'';
   -webkit-appearance: none;
-  background-color: transparent;
-  border: 2px solid #0079bf;
+  /* background-color: transparent; */
+  border: 2px solid #000000;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   padding: 10px;
   display: inline-block;
@@ -58,13 +67,13 @@ ul li:hover {
   left: 9px;
   width: 6px;
   height: 14px;
-  border: solid #fff;
+  border: solid rgb(0, 0, 0);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
-#list input:checked + label:before {
-  background: #0079bf;
-} 
+/* #list input:checked + label:before {
+  /* background: #0000007a;
+}  */
 #list input:checked + label {
   text-decoration: line-through;
 }
@@ -74,23 +83,24 @@ ul li:hover {
     border-radius: 3px;
 }
 .delete:hover {
-  background: #f2f2f2;
+  /* background: #f2f2f2; */
   cursor: pointer;
 }
 h1 {
   text-align: center;
+  color: black;
 }
 .add-task {
   width: 100%;
     outline: none;
     font-size: 15px;
     padding: 11px;
-    border: 1px solid #f3f3f3;
+    border: 1px solid #000000;
     margin-bottom: 3px;
 }
 #total-tasks {
   margin-bottom: 20px;
   font-size: 13px;
     margin-left: 2px;
-    color: gray;
+    color: rgb(0, 0, 0);
 }
